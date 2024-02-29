@@ -30,6 +30,7 @@ a:focus {
 
 body {
   font-family: "Inter", sans-serif;
+  background-color: $Off-white;
 }
 
 header {
@@ -44,7 +45,7 @@ header {
     nav {
       ul.menu {
         list-style: none;
-        display: none;
+        display: flex;
         align-items: center;
         justify-content: center;
         gap: 40px;
@@ -110,6 +111,9 @@ header {
   @media (max-width: 768px) {
     .container {
       nav {
+        ul.menu {
+          display: none;
+        }
         .openMobileMenu {
           display: flex;
         }
@@ -145,7 +149,7 @@ main {
           gap: 30px;
           .title {
             flex: 1;
-            font-size: 45px;
+            font-size: 55px;
             font-weight: 800;
             line-height: 50px;
           }
@@ -187,7 +191,7 @@ main {
         height: 100%;
         .newsTitle {
           color: $Soft_orange;
-          font-size: 32px;
+          font-size: 36px;
         }
         ul.newsList {
           list-style: none;
